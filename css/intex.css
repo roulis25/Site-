@@ -1,0 +1,162 @@
+header {
+  background-color: #790b0b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #790b0b;
+}
+
+.welcome {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fde3e5;
+  color: #660000;
+  border-bottom: 2px solid #ccc;
+}
+
+.welcome h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.scout-group {
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.scout-group a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.scout-group img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.scout-group.lykopoyla:hover img {
+  transform: scale(1.08);
+  border-color: #dbe701;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.scout-group.omada:hover img {
+  transform: scale(1.08);
+  border-color: #0b6e05;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.scout-group.ethelodes:hover img {
+  transform: scale(1.08);
+  border-color: #0077cc;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.scout-group.koinotita:hover img {
+  transform: scale(1.08);
+  border-color: #cc0000;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.scout-group h3 {
+  margin-top: 12px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.age-range {
+  color: #3366cc;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #790b0b;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .scout-group {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .scout-group img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .scout-group h3 {
+    font-size: 1.2em;
+  }
+
+  .age-range {
+    font-size: 1em;
+  }
+
+  .chat-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .chat-window {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome h2 {
+    font-size: 1.5em;
+  }
+
+  .welcome p {
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+}

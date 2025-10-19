@@ -1,0 +1,113 @@
+header {
+  background-color: #790b0b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+body {
+  background-color: #fde3e5;
+}
+
+.content h2 {
+  font-size: 2em;
+  color: #790b0b;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-credit {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.unit-block .brown {
+  color: brown;
+}
+
+.unit-block .red {
+  color: red;
+}
+
+.unit-block.lykopoula .agelh {
+  color: rgb(156, 146, 51);
+}
+
+.unit-block.lykopoula {
+  background-color: rgba(255, 238, 0, 0.5);
+  color: #000;
+  border-radius: 10px;
+}
+
+.unit-block.proskopoi .proskopoi {
+  color: darkgreen;
+}
+
+.unit-block.proskopoi {
+  background-color: rgba(9, 112, 2, 0.5);
+  color: #000;
+  border-radius: 10px;
+}
+
+.unit-block.koinotita {
+  background-color: rgba(112, 2, 2, 0.5);
+  color: #000;
+  border-radius: 10px;
+}
+
+.unit-block.ethelontes {
+  background-color: rgba(0, 21, 179, 0.5);
+  color: #000;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #790b0b;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .unit-block {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .icon-text-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unit-icon {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .text-block {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .participation-form {
+    padding: 15px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

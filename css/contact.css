@@ -1,0 +1,158 @@
+header {
+    background-color: #790b0b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+body {
+    background-color: #fde3e5;
+}
+
+.burger1 {
+    font-size: 2.5em;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+    color: black;
+}
+
+.nav-links1 {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 15vh;
+    padding: 10px 0;
+}
+
+.nav-links1 li {
+    margin: 0;
+}
+
+.nav-links1 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links1.show {
+    display: flex;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: #790b0b;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contact-container h2 {
+    color: #003366;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #00695c;
+}
+
+.contact-info {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-info i {
+    color: #c01515;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #790b0b;
+    color: white;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .contact-columns {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .contact-column {
+    width: 100%;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-info {
+    padding: 15px;
+  }
+
+  .burger1 {
+    display: block;
+  }
+
+  .nav-links1 {
+    display: none;
+    flex-direction: column;
+    background-color: #790b0b;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: fit-content;
+    min-width: 130px;
+    z-index: 1000;
+    align-items: flex-end;
+    padding: 10px 20px;
+  }
+
+  .nav-links1.show {
+    display: flex;
+  }
+
+  .nav-links1 li {
+    text-align: right;
+    padding: 10px 0;
+  }
+}

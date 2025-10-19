@@ -1,0 +1,108 @@
+body {
+    background-color: #fde3e5;
+}
+
+header {
+    background-color: #c01515;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+} 
+  
+.content h2 {
+    font-size: 3em;
+    color: #c01515;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #c01515;
+    color: white;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #c01515;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .branch-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .branch-box {
+    position: relative;
+    width: 90%;
+    max-width: 350px;
+    margin: 15px auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .branch-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(65%);
+    border-radius: 12px;
+  }
+
+  .branch-box span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0 0 4px black;
+  }
+
+  .chat-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .chat-window {
+    width: 90vw;
+  }
+
+  .content h2 {
+    font-size: 2em;
+  }
+
+  .content {
+    padding: 0 15px;
+  }
+}
